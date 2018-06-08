@@ -2,7 +2,7 @@
   "name": "corporate-credit-card",
   "description": "Self Project ",
   "license": "MIT",
-  "repository": "git@github.com:bhargavag78/ip-wxp-corporate-credit-card.git",
+  "repository": "https://github.com/bhargavag78/ip-wxp-corporate-credit-card.git",
   "author": "Barry <bhargavag78@gmail.com>",
   "main": "app.js",
   "scripts": {
