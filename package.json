@@ -1,0 +1,33 @@
+{
+  "name": "corporate-credit-card",
+  "description": "Self Project ",
+  "license": "MIT",
+  "repository": "git@github.com:bhargavag78/ip-wxp-corporate-credit-card.git",
+  "author": "Barry <bhargavag78@gmail.com>",
+  "main": "app.js",
+  "scripts": {
+    "lint": "ip lint",
+    "mocha": "ip mocha",
+    "postinstall": "(pwd | grep -q 'node_modules' || test \"$NODE_ENV\" = 'production') && exit 0 || ip postinstall",
+    "test": "run-s lint \"mocha -- --report\"",
+    "whitesource": "whitesource \"$npm_package_name\""
+  },
+  "contributors": [],
+  "eslintConfig": {
+    "extends": [
+      "@financial-times/ip-wxp"
+    ],
+    "rules": {
+      "no-console": 0
+    }
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@financial-times/di2-whitesource": "^2.0.1",
+    "@financial-times/eslint-config-ip-wxp": "^1.0.5",
+    "@financial-times/ip-wxp-git-config": "^1.0.0",
+    "@financial-times/ip-wxp-scripts": "^1.0.6",
+    "@financial-times/secret-squirrel": "^2.8.0",
+    "npm-run-all": "^4.1.3"
+  }
+}
